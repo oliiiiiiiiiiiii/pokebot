@@ -1,3 +1,6 @@
+__all__ = "Starter"
+
+
 class Starter:
     """Starter pokemons of each generation"""
 

@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 
+__all__ = "Pokemon"
+
 
 class Pokemon(BaseModel):
     """A base class for the pokemon object."""
