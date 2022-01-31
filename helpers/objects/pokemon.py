@@ -18,18 +18,20 @@ class BasePokemon(BaseModel):
     _base_sp_attack: int
     _base_sp_defense: int
     _base_speed: int
+    _moveset: list[str]
 
 
 class UserPokemon(BasePokemon):
     nature: str
-    # IV attributes
-    hp: list[int]
     level: list[int]
-    attack: list[int]
-    defense: list[int]
-    sp_attack: list[int]
-    sp_defense: list[int]
-    speed: list[int]
+    moves: list[str]
+    # IV attributes
+    hp: list[int] # [hp-value, hp-iv]
+    attack: list[int]  # [attack-value, attack-iv]
+    defense: list[int] # [defense-value, defense-iv]
+    sp_attack: list[int] # [sp_attack-value, sp_attack-iv]
+    sp_defense: list[int] # [sp_defense-value, sp_defense-iv]
+    speed: list[int] # [speed-value, speed-iv]
 
     @property
     def _iv(self):

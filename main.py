@@ -1,3 +1,4 @@
+from fileinput import filename
 import os
 from dotenv import load_dotenv
 from bot import PokeBot
