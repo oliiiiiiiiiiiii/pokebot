@@ -26,12 +26,12 @@ class UserPokemon(BasePokemon):
     level: list[int]
     moves: list[str]
     # IV attributes
-    hp: list[int] # [hp-value, hp-iv]
+    hp: list[int]  # [hp-value, hp-iv]
     attack: list[int]  # [attack-value, attack-iv]
-    defense: list[int] # [defense-value, defense-iv]
-    sp_attack: list[int] # [sp_attack-value, sp_attack-iv]
-    sp_defense: list[int] # [sp_defense-value, sp_defense-iv]
-    speed: list[int] # [speed-value, speed-iv]
+    defense: list[int]  # [defense-value, defense-iv]
+    sp_attack: list[int]  # [sp_attack-value, sp_attack-iv]
+    sp_defense: list[int]  # [sp_defense-value, sp_defense-iv]
+    speed: list[int]  # [speed-value, speed-iv]
 
     @property
     def _iv(self):

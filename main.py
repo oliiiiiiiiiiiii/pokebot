@@ -1,11 +1,10 @@
-from fileinput import filename
-import os
+from os import getenv
 from dotenv import load_dotenv
 from bot import PokeBot
 
 load_dotenv()
 
-token = os.getenv("token")
+token = getenv("token")
 
 bot = PokeBot()
 
